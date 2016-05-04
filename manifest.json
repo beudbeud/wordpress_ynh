@@ -1,23 +1,14 @@
 {
-    "name": "WordPress MultiSite",
-    "id": "wordpressms",
+    "name": "WordPress",
+    "id": "wordpress",
     "description": {
         "en": "Create a beautiful blog or website easily",
         "fr": "Logiciel de création de blog ou de site Web"
     },
-<<<<<<< HEAD
     "url": "http://wordpress.org/",
     "maintainer": {
         "name": "beudbeud",
         "email": "beudbeud@beudibox.fr"
-=======
-	"version": "4.4",
-	"url": "https://wordpress.org/",
-    "licence": "free",
-    "maintainer": {
-        "name": "Maniack Crudelis",
-        "email": "maniackc_dev@crudelis.fr"
->>>>>>> 8cb64842c14724990c5a839c6d3a748947f21f48
     },
     "multi_instance": "true",
     "services": [
@@ -65,21 +56,13 @@
                 "default": "en_EN"
             },
             {
-                "name": "multisite",
-                "ask": {
-                    "en": "Enable multisite option ?",
-                    "fr": "Activer l'option multisite ?"
-                },
-                "choices": ["Yes", "No"],
-                "default": "No"
-            },
-            {
                 "name": "public_site",
                 "ask": {
-                    "en": "Is it a public WordPress site ?",
+                    "en": "Is it a public WordPress site?",
                     "fr": "Est-ce un site public ?"
                 },
-                "choices": ["Yes", "No"]
+                "choices": ["Yes", "No"],
+                "default": "Yes"
             }
         ]
     }
