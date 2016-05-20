@@ -24,6 +24,9 @@ $table_prefix  = 'wp_';
 // Debug mode
 define('WP_DEBUG', false); 
 
+// Force https redirect
+//define('FORCE_SSL_ADMIN', true);
+
 // Path
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
@@ -31,5 +34,3 @@ if ( !defined('ABSPATH') )
 // WordPress settings path
 require_once(ABSPATH . 'wp-settings.php');
 
-// Force https redirect
-//define('FORCE_SSL_ADMIN', true);
